@@ -15,6 +15,7 @@ The model can be used:
 - To analyse joint action time series, by calculating the model parameters that best reproduce the experimental data. 
 
 Directory `./src` contains the classes that specify the general model.
+
 Directory `./Data_Paper` contains the data used in the paper. 
 
 Directory `./data` contains other test data to be used for model-based analysis
