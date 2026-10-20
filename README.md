@@ -12,6 +12,8 @@ Each agent has a sensory system, an observer and a controller. The actions are a
 
 Directory ./Data_Paper contains the data used in the paper. 
 
+Directory ./data contains other test data to be used for model-based analysis
+
 Directory ./src contains the classes that specify the general model, which can be used for both simulating a joint action scenario or to analyze joint action time series.
 
 
