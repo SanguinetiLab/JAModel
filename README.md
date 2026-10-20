@@ -8,7 +8,7 @@ Each agent has a sensory system, an observer and a controller. The actions are a
 
 - The **sensory system** perceives the partner action. We assume that the sensory information is just the partner's action plus a Gaussian noise.
 - The **observer** combines prior experience and sensory information to predict the partner's action on the next game iteration (trial). The observer is a Kalman filter which combines a prior (partner model) and the sensory information.
-- The **controller** generates the agent's action on the basis of the prediction of the partner model. Each agent's action is specified by a set of quadratic cost functions (of own and partner actions). One categorical variable (*strategy choice*) determines which cost function is used to generate the actual action. This formulation generalizes the notion of quadratic game and allows for multiple Nash equilibria and mixed strategies.
+- The **controller** generates the agent's action on the basis of the prediction of the partner model. Each agent's action is specified by a set of quadratic cost functions (of own and partner actions). One categorical variable (*strategy choice*) determines which cost function is used to generate the actual action. If the cost function is positive definite, the action has a Gaussian mixture distribution (one Gaussian per strategy). This formulation generalizes the notion of quadratic game and allows for multiple Nash equilibria and mixed strategies. 
 
 The model can be used:
 - To simulate joint action scenarios involving iterated game plays. Actions can be described by scalars or vectors. Movement trajectories can be represented as harmonic splines in terms of vectors of nodes. 
