@@ -6,9 +6,9 @@ The model is summarized below.
 
 Each agent has a sensory system, a partner model and a controller. 
 
--The *sensory system* perceives the partner action.
--The *partner model* combines prior experience and sensory information to predict the partner's next action.
--The *controller* generates the agent's action on the basis of the prediction of the partner model.
+-item The *sensory system* perceives the partner action.
+-item The *partner model* combines prior experience and sensory information to predict the partner's next action.
+-item The *controller* generates the agent's action on the basis of the prediction of the partner model.
 
 Directory ./Data_Paper contains the data used in the paper. 
 
