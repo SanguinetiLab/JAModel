@@ -10,6 +10,10 @@ Each agent has a sensory system, an observer and a controller. The actions are a
 - The **observer** combines prior experience and sensory information to predict the partner's next action. The observer is a Kalman filter which combines a prior (partner model) and the sensory information.
 - The **controller** generates the agent's action on the basis of the prediction of the partner model. Each agent's action is specified by a set of quadratic cost functions (of own and partner actions). One categorical variable (*strategy choice*) determines which cost function is used to generate the actual action. This formulation generalizes the notion of quadratic game and allows for multiple Nash equilibria and mixed strategies.
 
+The model can be used:
+- To simulate joint action scenarios involving iterated game plays. Actions can be described by scalars or vectors. Movement trajectories can be represented as harmonic splines in terms of vectors of nodes. 
+-To analyse joint action time series. 
+
 Directory ./Data_Paper contains the data used in the paper. 
 
 Directory ./data contains other test data to be used for model-based analysis
