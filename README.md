@@ -14,10 +14,10 @@ The model can be used:
 - To simulate joint action scenarios involving iterated game plays. Actions can be described by scalars or vectors. Movement trajectories can be represented as harmonic splines in terms of vectors of nodes. 
 - To analyse joint action time series, by calculating the model parameters that best reproduce the experimental data. 
 
+Directory `./src` contains the classes that specify the general model, which can be used for both simulating a joint action scenario or to analyze joint action time series.
+
 Directory `./Data_Paper` contains the data used in the paper. 
 
 Directory `./data` contains other test data to be used for model-based analysis
-
-Directory `./src` contains the classes that specify the general model, which can be used for both simulating a joint action scenario or to analyze joint action time series.
 
 
