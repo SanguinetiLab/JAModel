@@ -12,7 +12,7 @@ Each agent has a sensory system, an observer and a controller. The actions are a
 
 The model can be used:
 - To simulate joint action scenarios involving iterated game plays. Actions can be described by scalars or vectors. Movement trajectories can be represented as harmonic splines in terms of vectors of nodes. 
--To analyse joint action time series. 
+- To analyse joint action time series. 
 
 Directory ./Data_Paper contains the data used in the paper. 
 
