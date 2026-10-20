@@ -4,11 +4,11 @@ This repository contains the source code for the computational model of joint ac
 The model is summarized below.
 ![Graphical Model](./graphicalmodel.png)
 
-Each agent has a sensory system, a partner model and a controller. 
+Each agent has a sensory system, an observer and a controller. The actions are assumed to be continuous variables (possibly vectors).
 
-- The *sensory system* perceives the partner action.
-- The *partner model* combines prior experience and sensory information to predict the partner's next action.
-- The *controller* generates the agent's action on the basis of the prediction of the partner model.
+- The *sensory system* perceives the partner action. We assume that the sensory information is just the partner's action plus a Gaussian noise.
+- The *observer* combines prior experience and sensory information to predict the partner's next action. The observer is a Kalman filter which combines a prior (partner model) and the sensory information.
+- The *controller* generates the agent's action on the basis of the prediction of the partner model. Each agent's action is specified by a set of quadratic cost functions (of own and partner actions). One categorical variable (*strategy choice*) determines which cost function is used to generate the actual action. This formulation generalizes the notion of quadratic game and allows for multiple Nash equilibria.
 
 Directory ./Data_Paper contains the data used in the paper. 
 
