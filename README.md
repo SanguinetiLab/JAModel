@@ -20,4 +20,15 @@ Directory `./Data_Paper` contains the data used in the paper.
 
 Directory `./data` contains other test data to be used for model-based analysis
 
+**How to use**
+
+in directory `./src` there are two example applications (in separate directories), corresponding to the results presented in the paper:
+
+`./src/2VPgame` exemplifies the model use as an analytical tool. Two scripts `Fit_Sim_2VPSymm.m` and `Fit_Sim_2VPASymm.m`fit experimental data (2D trajectories) from a 2-via point joint reaching task and estimate the model parameters. Actions are 2D trajectories, represented as harmonic splines.
+
+`./src/StagHuntgame` exemplifies the model use as a simulation tool. The script `GameStagHunt_SimulateExp.m` simulates a Stag-Hunt game exactly as in the paper. Actions are scalar quantities. 
+
+
+
+
 
